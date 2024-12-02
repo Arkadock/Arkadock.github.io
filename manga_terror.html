@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucha Lectura - Mangas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con logo y navegación -->
+    <header>
+        <div class="brand">
+            <img src="Mucha Lectura 2.2.png" alt="Logo de la tienda">
+            <h1>Mucha Lectura</h1>
+        </div>
+        <!-- Navegación -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mangas.html">Mangas</a>
+            <a href="solicitar.html">Solicitud de Pedidos</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página de Mangas -->
+    <section class="productos" id="mangas">
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar título...">
+            <button>Buscar</button>
+        </div>
+
+        <div class="content-grid">
+            <!-- Lista de productos -->
+            <div class="product-section">
+                <h2>Libros más pedidos</h2>
+                <div class="product-grid">
+                    <!-- Primer producto -->
+                    <div class="product-card">
+                        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/5b/07/5b07075fccf0b64d6764fb0c0afa19ac.jpg" alt="Another 1">
+                        <h3>Another 1</h3>
+                        <h4>Yukito Ayatsuji</h4>
+                        <button class="view-details" data-product="Another 1" data-price="40" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Another 1" data-price="40">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Segundo producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81MKsr1ukbL._SL1500_.jpg" alt="Deserter: Junji Ito Story Collection">
+                        <h3>Deserter: Junji Ito Story Collection</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Deserter: Junji Ito Story Collection" data-price="90" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Deserter: Junji Ito Story Collection" data-price="90">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Tercer producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81CfbcFFyHL._SL1500_.jpg" alt="Uzumaki">
+                        <h3>Junji Ito</h3>
+                        <h4>Takashi Murakami</h4>
+                        <button class="view-details" data-product="Uzumaki" data-price="85" data-editorial="HANAMI" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Uzumaki" data-price="85">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Cuarto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81qshFYJOOL._SL1500_.jpg" alt="Tomie">
+                        <h3>Tomie</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Tomie" data-price="100" data-editorial="JUMP COMICS" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Tomie" data-price="100">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Quinto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81ZHelRXrlL._SL1200_.jpg" alt="Dissolving Classroom">
+                        <h3>Dissolving Classroom</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Dissolving Classroom" data-price="120" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Dissolving Classroom" data-price="120">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Sexto producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/516Sgs4KTcL.jpg" alt="Hell Girl 1">
+                        <h3>Hell Girl 1</h3>
+                        <h4>Miyuki Eto</h4>
+                        <button class="view-details" data-product="Hell Girl 1" data-price="35" data-editorial="Planeta Comic">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Hell Girl 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Septimo producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81irvOg5-6L._SL1500_.jpg" alt="Blood on the Tracks 1">
+                        <h3>Blood on the Tracks 1</h3>
+                        <h4>Shozu Oshime</h4>
+                        <button class="view-details" data-product="Blood on the Tracks 1" data-price="38" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Blood on the Tracks 1" data-price="38">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Octavo producto -->
+                    <div class="product-card">
+                    <img src="https://www.normaeditorial.com/upload/media/albumes/0001/06/b26645589256623e90c02dae064861e63234fb85.jpeg" alt="Antagonista">
+                        <h3>The Promised No Neverland 1</h3>
+                        <h4>Kaiu Shirai & Posuka Demizu</h4>
+                        <button class="view-details" data-product="The Promised No Neverland 1" data-price="35" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="The Promised No Neverland 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Noveno producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/91-um1ueRqL._SL1500_.jpg" alt="Dorohedoro 1">
+                        <h3>Dorohedoro 1</h3>
+                        <h4>Q Hayashida</h4>
+                        <button class="view-details" data-product="Dorohedoro 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Dorohedoro 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Decimo producto -->
+                    <div class="product-card">
+                    <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/a1/54/a154db205c2f493e91d2709e0e2df45d.jpg" alt="Mieruko-chan">
+                        <h3>Mieruko-chan 1</h3>
+                        <h4>Tomoki Izumi</h4>
+                        <button class="view-details" data-product="Mieruko-chan 1" data-price="35" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Mieruko-chan 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de géneros literarios -->
+            <div class="genres-list">
+                <h3>Géneros Literarios</h3>
+                <ul>
+                    <li><a href="manga_aventura.html">Aventura</a></li>
+                    <li><a href="manga_ciencia_ficcion.html">Ciencia Ficción</a></li>
+                    <li><a href="manga_fantasia.html">Fantasía</a></li>
+                    <li><a href="manga_misterio.html">Misterio</a></li>
+                    <li><a href="manga_romance.html">Romance</a></li>
+                    <li><a href="manga_terror.html">Terror</a></li>
+                    <li><a href="manga_drama.html">Drama</a></li>
+                    <li><a href="manga_accion.html">Acción</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compras, visible en la esquina -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2> <!-- Título del carrito -->
+        <ul id="cart-items"> <!-- Lista de productos añadidos al carrito -->
+            <!-- Los productos añadidos aparecerán aquí -->
+        </ul>
+        <button id="checkout">Confirmar Compra</button> <!-- Botón para confirmar la compra -->
+    </div>
+
+    <!-- Modal de detalles del producto -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Detalles del Producto</h2> <!-- Título del modal -->
+            <div id="modal-content-details">
+                <!-- Los detalles del producto aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación de compra -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close" id="closeCheckoutModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Confirmar Compra</h2> <!-- Título del modal -->
+            <p>Estás por confirmar tu compra. ¿Deseas continuar?</p> <!-- Mensaje de confirmación -->
+            <button id="confirmPurchase">Confirmar</button> <!-- Botón para confirmar -->
+            <button id="cancelPurchase">Cancelar</button> <!-- Botón para cancelar -->
+        </div>
+    </div>
+
+            <!-- Botón para mostrar/ocultar el carrito -->
+<div class="cart-toggle" id="cartToggle">
+    &gt; <!-- Ícono o texto para el borde lateral -->
+</div>
+
+    <!-- Pie de página -->
+<footer>
+    <!-- Columna 1: Mucha Lectura -->
+    <div class="footer-col">
+        <h3>Mucha Lectura</h3>
+        <a href="https://www.facebook.com/login/?locale=es_LA" target="_blank">
+            <img src="https://cdn.icon-icons.com/icons2/3398/PNG/512/circle_facebook_logo_icon_214753.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fhaoyii%2F&source=private_profile&locale=es_ES" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/042/127/156/non_2x/black-and-white-instagram-logo-on-square-with-transparent-background-free-png.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/login?lang=es" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/256/60/60580.png" alt="X">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2022/11/12/02/10/youtube-7586089_1280.png" alt="youtube">
+        </a>
+    </div>
+
+    <!-- Columna 2: Contacto -->
+    <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>MuchaLectura@gmail.com</p>
+        <p>+51 999 999 999</p>
+        <p>Lun - Sab de 8am a 8pm</p>
+    </div>
+
+    <!-- Columna 3: Libro de reclamaciones -->
+    <div class="footer-col">
+        <h3>Libro de reclamaciones</h3>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://ieskimbiri.edu.pe/wp-content/uploads/2024/07/i1.jpg" alt="Libro de Reclamaciones" class="libroR">
+        </a>
+    </div>
+</footer>
+<!-- Texto de derechos reservados separado y centrado -->
+<div class="copyright">
+    © 2024 Librería Mucha Lectura. Todos los derechos reservados.
+</div>
+<script src="script.js"></script> <!-- Vinculamos el archivo JS -->
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucha Lectura - Tienda de Mangas</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="brand">
+            <img src="Mucha Lectura 2.2.png" alt="Logo de la tienda">
+            <h1>Mucha Lectura</h1>
+        </div>
+        <!-- Navegación -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mangas.html">Mangas</a>
+            <a href="solicitar.html">Solicitud de Pedidos</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+    </header>
+
+    <!-- Sección de productos más pedidos -->
+    <section class="productos" id="mangas">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar título...">
+            <button>Buscar</button>
+        </div>
+
+        <h2>Libros más pedidos</h2>
+        <div class="product-grid">          
+            <!-- Primer producto -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71goH8p2ENL._AC_UF1000,1000_QL80_.jpg" alt="Libro 1">
+                <h3>Solo Leveling 3</h3>
+                <h4> Chugong & Dubu</h4>
+                <button class="view-details" data-product="Solo Leveling 3" data-price="90" data-editorial="IVREA" data-image="https://m.media-amazon.com/images/I/71goH8p2ENL._AC_UF1000,1000_QL80_.jpg"  >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Solo Leveling 3" data-price="90"  >Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+
+
+            <!-- Segundo producto -->
+            <div class="product-card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_873986-MLU69717380092_052023-O.webp" alt="Libro 2">
+                <h3>Gachiakuta 1</h3>
+                <h4>Kei Urana</h4>
+                <button class="view-details" data-product="Gachiakuta 1" data-price="35" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Gachiakuta 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            
+            <!-- Tercer producto -->
+            <div class="product-card">
+                <img src="https://es.babelio.com/couv/CVT_El-perro-guardin-de-las-estrellas_8413.jpg" alt="El perro que cuidaba de las estrellas">
+                <h3>El perro que cuidaba de las estrellas</h3>
+                <h4>Takashi Murakami</h4>
+                <button class="view-details" data-product="El perro que cuidaba de las estrellas" data-price="30" data-editorial="HANAMI" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="El perro que cuidaba de las estrellas" data-price="30">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Cuarto producto -->
+            <div class="product-card">
+                <img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/92/Kimetsu_no_Yaiba_V1jap.png/revision/latest?cb=20190925044832&path-prefix=es" alt="Kimetsu no yaiba">
+                <h3>Kimetsu no yaiba 1</h3>
+                <h4>Koyoharu Gotouge</h4>
+                <button class="view-details" data-product="Kimetsu no yaiba 1" data-price="25" data-editorial="JUMP COMICS" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Kimetsu no yaiba 1" data-price="25">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Quinto producto -->
+            <div class="product-card">
+                <img src="https://static.wikia.nocookie.net/onepiece/images/3/3a/Volumen_1.png/revision/latest?cb=20211112115214&path-prefix=es" alt="Monstera Deliciosa">
+                <h3>One Piece 1</h3>
+                <h4>Eiichiro Oda</h4>
+                <button class="view-details" data-product="One Piece 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="One Piece 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Sexto producto -->
+            <div class="product-card">
+                <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/91/27/9127efeda03776627c4462a784801159.jpg" alt="Blue lock">
+                <h3>Blue lock 1</h3>
+                <h4>Yusuke Nomura</h4>
+                <button class="view-details" data-product="Blue lock 1" data-price="35" data-editorial="Planeta Comic">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Blue lock 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Septimo producto -->
+            <div class="product-card">
+                <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/ca/1e/ca1ef63215b97700f28d026571ff6667.jpg" alt="Dandadan">
+                <h3>Dandadan 1</h3>
+                <h4>Yukinobu Tatsu</h4>
+                <button class="view-details" data-product="Dandadan 1" data-price="35" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Dandadan 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+             <!-- Octavo producto -->
+            <div class="product-card">
+                <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/f9/69/f9697efa79ad7787ed076650bc43c30f.jpg" alt="Antagonista">
+                <h3>Antagonista 1</h3>
+                <h4>Luis Sergio Novoa & Alejandro García Mangana</h4>
+                <button class="view-details" data-product="Antagonista 1" data-price="30" data-editorial="HANAMI">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Antagonista 1" data-price="30">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Noveno producto -->
+            <div class="product-card">
+                <img src="https://static.wikia.nocookie.net/bokunoheroacademia/images/a/ab/Volumen_1_Vigilantes.png/revision/latest?cb=20210104051630&path-prefix=es" alt="igilantes: My Hero Academia Illegals">
+                <h3>Vigilantes: My Hero Academia Illegals 1</h3>
+                <h4>Hideyuki Furuhashi & Betten Court</h4>
+                <button class="view-details" data-product="Vigilantes: My Hero Academia Illegals 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Vigilantes: My Hero Academia Illegals 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Decimo producto -->
+            <div class="product-card">
+                <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/54/cd/54cde9f43d6ebf97805fe85ee9bd204f.jpg" alt="Shuumatsu no Valkyrie">
+                <h3>Shuumatsu no Valkyrie 1</h3>
+                <h4>Ajichika</h4>
+                <button class="view-details" data-product="Shuumatsu no Valkyrie 1" data-price="38" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Shuumatsu no Valkyrie 1" data-price="38">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+
+            <!-- 6to producto -->
+            <div class="product-card">
+                <img src="https://www.ivrea.com.ar/wp-content/uploads/photo-gallery/imported_from_media_libray/therisingoftheshieldhero01.jpg?bwg=1712723974" alt="TATE NO YUUSHA NO NARIAGARI 1">
+                <h3>TATE NO YUUSHA NO NARIAGARI 1</h3>
+                <h4>ANEKO YUSAGI</h4>
+                <button class="view-details" data-product="TATE NO YUUSHA NO NARIAGARI 1" data-price="35" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="TATE NO YUUSHA NO NARIAGARI 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- 8vo producto -->
+            <div class="product-card">
+                <img src="https://www.ivrea.com.ar/wp-content/uploads/photo-gallery/imported_from_media_libray/iamahero01.jpg?bwg=1611945660" alt="I AM A HERO 1">
+                <h3>I AM A HERO 1</h3>
+                <h4>KENGO HANAZAWA</h4>
+                <button class="view-details" data-product="I AM A HERO 1" data-price="30" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="I AM A HERO 1" data-price="30">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- 9no producto -->
+            <div class="product-card">
+                <img src="https://www.planetadelibros.com.pe/usuaris/libros/fotos/209/m_libros/208035_vinland-saga-n01_9788416051816.jpg" alt="Vinland Saga 1">
+                <h3>Vinland Saga 1</h3>
+                <h4>Makoto Yukimura</h4>
+                <button class="view-details" data-product="Vinland Saga 1" data-price="40" data-editorial="Planeta Comic" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Vinland Saga 1" data-price="90">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- 10mo producto -->
+
+            <div class="product-card">
+                <img src="https://www.ivrea.com.ar/wp-content/uploads/photo-gallery/imported_from_media_libray/onepiece46.jpg?bwg=1611943942" alt="One Piece 46">
+                <h3>One Piece 46</h3>
+                <h4>Eiichiro Oda</h4>
+                <button class="view-details" data-product="One Piece 46" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="One Piece 46" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- 11mo producto -->
+             <div class="product-card">
+                <img src="https://www.ivrea.com.ar/wp-content/uploads/photo-gallery/imported_from_media_libray/sololeveling02.jpg?bwg=1713146339" alt="Solo Leveling 2">
+                <h3>Solo Leveling 2</h3>
+                <h4>Chugong & Dubu</h4>
+                <button class="view-details" data-product="Solo Leveling 2" data-price="90" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Solo Leveling 2" data-price="90">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+             </div>
+             <!-- Decimo producto -->
+            <div class="product-card">
+                <img src="https://www.normaeditorial.com/upload/media/albumes/0001/18/1bcc0df8737c15b780804e3837e2b6809844409c.jpeg" alt="tengoku daimakyou 1">
+                <h3>tengoku daimakyou 1</h3>
+                <h4>Masakazu Ishiguro</h4>
+                <button class="view-details" data-product="tengoku daimakyou 1" data-price="40" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="tengoku daimakyou 1" data-price="40">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Sexto producto -->
+            <div class="product-card">
+                <img src="https://www.crisol.com.pe/media/catalog/product/cache/f6d2c62455a42b0d712f6c919e880845/9/7/9788417699673_ac1jfn4ofs8iwm9h.jpg" alt="death note 1">
+                <h3>Death Note 1</h3>
+                <h4>Tsugumi Ohba</h4>
+                <button class="view-details" data-product="Death Note 1" data-price="39" data-editorial="Planeta Comic">Ver detalles</button> <!-- Botón para ver detalles -->
+                <button class="add-to-cart" data-product="Death Note 1" data-price="39">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Primer producto -->
+                    <div class="product-card">
+                        <img src="https://www.normaeditorial.com/upload/media/albumes/0001/06/thumb_5517_albumes_big.jpeg" alt="Fruits Basket 1">
+                        <h3>Fruits Basket 1</h3>
+                        <h4>Natsuki Takaya</h4>
+                        <button class="view-details" data-product="Fruits Basket 1" data-price="35" data-editorial="NORMA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Fruits Basket 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Segundo producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81hEA+yLRnL._SL1500_.jpg" alt="Orange 1">
+                        <h3>Orange 1</h3>
+                        <h4>Ichigo Takano</h4>
+                        <button class="view-details" data-product="Orange 1" data-price="35" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Orange 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Tercer producto -->
+                    <div class="product-card">
+                        <img src="https://www.normacomics.com/media/catalog/product/cache/73220b1ade7f3b3cbc46bd1d55c4f0c1/k/a/kaguya-sama_love_war.jpg" alt="Kaguya-sama: Love is War! 1">
+                        <h3>Kaguya-sama: Love is War! 1</h3>
+                        <h4>Takashi Murakami</h4>
+                        <button class="view-details" data-product="Kaguya-sama: Love is War! 1" data-price="30" data-editorial="HANAMI" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Kaguya-sama: Love is War! 1" data-price="30">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Cuarto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81OAl-FBUTL._SL1500_.jpg" alt="Tomo-chan is a Girl! 1">
+                        <h3>Tomo-chan is a Girl! 1</h3>
+                        <h4>Fumita Yanagida</h4>
+                        <button class="view-details" data-product="Tomo-chan is a Girl! 1" data-price="25" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Tomo-chan is a Girl! 1" data-price="25">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Quinto producto -->
+                    <div class="product-card">
+                        <img src="https://sbslibreria.vtexassets.com/arquivos/ids/564498-800-auto?v=638292068030700000&width=800&height=auto&aspect=true" alt="Ahoha Ride 1">
+                        <h3>Ahoha Ride 1</h3>
+                        <h4>SAKISAKA IO</h4>
+                        <button class="view-details" data-product="Ahoha Ride 1" data-price="35" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Ahoha Ride 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Sexto producto -->
+                    <div class="product-card">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/a9/4f/a94f0f0f8befc714bb86d8a3c4ba95f2.jpg" alt="Horimiya 1">
+                        <h3>Horimiya 1</h3>
+                        <h4>Yusuke Nomura</h4>
+                        <button class="view-details" data-product="Horimiya 1" data-price="35" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Horimiya 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Septimo producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71KVorUu1QL._SL1200_.jpg" alt="Your Lie in April 1">
+                        <h3>Your Lie in April 1</h3>
+                        <h4>Naoshi Arakawa</h4>
+                        <button class="view-details" data-product="Your Lie in April 1" data-price="35" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Your Lie in April 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Octavo producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71c0q253FcL._SL1200_.jpg" alt="Your Lie in April 2">
+                        <h3>Your Lie in April 2</h3>
+                        <h4>Naoshi Arakawa</h4>
+                        <button class="view-details" data-product="Your Lie in April 2" data-price="35" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Your Lie in April 2" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Noveno producto -->
+                    <div class="product-card">
+                    <img src="https://www.milkywayediciones.com/cdn/shop/products/a_silent_voice_1.png?v=1464078650&width=832" alt="A silent voice 1">
+                        <h3>A silent voice 1</h3>
+                        <h4>Yoshitoki Oima</h4>
+                        <button class="view-details" data-product="A silent voice 1" data-price="35" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="A silent voice 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Decimo producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81t-NA+QL3L._SL1500_.jpg" alt="Tomo-chan is a Girl! 2">
+                        <h3>Tomo-chan is a Girl! 2</h3>
+                        <h4>Fumita Yanagida</h4>
+                        <button class="view-details" data-product="Tomo-chan is a Girl! 2" data-price="25" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Tomo-chan is a Girl! 2" data-price="25">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Primer producto -->
+                    <div class="product-card">
+                        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/5b/07/5b07075fccf0b64d6764fb0c0afa19ac.jpg" alt="Another 1">
+                        <h3>Another 1</h3>
+                        <h4>Yukito Ayatsuji</h4>
+                        <button class="view-details" data-product="Another 1" data-price="40" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Another 1" data-price="40">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Segundo producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81MKsr1ukbL._SL1500_.jpg" alt="Deserter: Junji Ito Story Collection">
+                        <h3>Deserter: Junji Ito Story Collection</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Deserter: Junji Ito Story Collection" data-price="90" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Deserter: Junji Ito Story Collection" data-price="90">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Tercer producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81CfbcFFyHL._SL1500_.jpg" alt="Uzumaki">
+                        <h3>Junji Ito</h3>
+                        <h4>Takashi Murakami</h4>
+                        <button class="view-details" data-product="Uzumaki" data-price="85" data-editorial="HANAMI" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Uzumaki" data-price="85">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Cuarto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81qshFYJOOL._SL1500_.jpg" alt="Tomie">
+                        <h3>Tomie</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Tomie" data-price="100" data-editorial="JUMP COMICS" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Tomie" data-price="100">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Quinto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81ZHelRXrlL._SL1200_.jpg" alt="Dissolving Classroom">
+                        <h3>Dissolving Classroom</h3>
+                        <h4>Junji Ito</h4>
+                        <button class="view-details" data-product="Dissolving Classroom" data-price="120" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Dissolving Classroom" data-price="120">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Sexto producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/516Sgs4KTcL.jpg" alt="Hell Girl 1">
+                        <h3>Hell Girl 1</h3>
+                        <h4>Miyuki Eto</h4>
+                        <button class="view-details" data-product="Hell Girl 1" data-price="35" data-editorial="Planeta Comic">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Hell Girl 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Septimo producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81irvOg5-6L._SL1500_.jpg" alt="Blood on the Tracks 1">
+                        <h3>Blood on the Tracks 1</h3>
+                        <h4>Shozu Oshime</h4>
+                        <button class="view-details" data-product="Blood on the Tracks 1" data-price="38" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Blood on the Tracks 1" data-price="38">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Octavo producto -->
+                    <div class="product-card">
+                    <img src="https://www.normaeditorial.com/upload/media/albumes/0001/06/b26645589256623e90c02dae064861e63234fb85.jpeg" alt="Antagonista">
+                        <h3>The Promised No Neverland 1</h3>
+                        <h4>Kaiu Shirai & Posuka Demizu</h4>
+                        <button class="view-details" data-product="The Promised No Neverland 1" data-price="35" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="The Promised No Neverland 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Noveno producto -->
+                    <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/91-um1ueRqL._SL1500_.jpg" alt="Dorohedoro 1">
+                        <h3>Dorohedoro 1</h3>
+                        <h4>Q Hayashida</h4>
+                        <button class="view-details" data-product="Dorohedoro 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Dorohedoro 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Decimo producto -->
+                    <div class="product-card">
+                    <img src="https://www.normaeditorial.com/upload/media/albumes/0001/05/6e4b41dbac114fe8cf1d7cd10aa14380d0c9303a.jpeg" alt="Tokyo Ghoul 1">
+                        <h3>Tokyo Ghoul 1</h3>
+                        <h4>Sui Ishida</h4>
+                        <button class="view-details" data-product="Tokyo Ghoul  1" data-price="45" data-editorial="NORMA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Tokyo Ghoul 1" data-price="45">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Sexto producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61OfOR3MDhL._SL1116_.jpg" alt="Fuuto PI 1">
+                        <h3>Fuuto PI 1</h3>
+                        <h4>Masaki Sato & Riku Sanjo</h4>
+                        <button class="view-details" data-product="Fuuto PI 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Fuuto PI 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compras, visible en la esquina -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2> <!-- Título del carrito -->
+        <ul id="cart-items"> <!-- Lista de productos añadidos al carrito -->
+            <!-- Los productos añadidos aparecerán aquí -->
+        </ul>
+        <button id="checkout">Confirmar Compra</button> <!-- Botón para confirmar la compra -->
+    </div>
+
+    <!-- Modal de detalles del producto -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Detalles del Producto</h2> <!-- Título del modal -->
+            <div id="modal-content-details">
+                <!-- Los detalles del producto aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación de compra -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close" id="closeCheckoutModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Confirmar Compra</h2> <!-- Título del modal -->
+            <p>Estás por confirmar tu compra. ¿Deseas continuar?</p> <!-- Mensaje de confirmación -->
+            <button id="confirmPurchase">Confirmar</button> <!-- Botón para confirmar -->
+            <button id="cancelPurchase">Cancelar</button> <!-- Botón para cancelar -->
+        </div>
+    </div>
+
+    <!-- Botón para mostrar/ocultar el carrito -->
+<div class="cart-toggle" id="cartToggle">
+    &gt; <!-- Ícono o texto para el borde lateral -->
+</div>
+
+
+    <!-- Pie de página -->
+<footer>
+    <!-- Columna 1: Mucha Lectura -->
+    <div class="footer-col">
+        <h3>Mucha Lectura</h3>
+        <a href="https://www.facebook.com/login/?locale=es_LA" target="_blank">
+            <img src="https://cdn.icon-icons.com/icons2/3398/PNG/512/circle_facebook_logo_icon_214753.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fhaoyii%2F&source=private_profile&locale=es_ES" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/042/127/156/non_2x/black-and-white-instagram-logo-on-square-with-transparent-background-free-png.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/login?lang=es" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/256/60/60580.png" alt="X">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2022/11/12/02/10/youtube-7586089_1280.png" alt="youtube">
+        </a>
+    </div>
+
+    <!-- Columna 2: Contacto -->
+    <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>MuchaLectura@gmail.com</p>
+        <p>+51 999 999 999</p>
+        <p>Lun - Sab de 8am a 8pm</p>
+    </div>
+
+    <!-- Columna 3: Libro de reclamaciones -->
+    <div class="footer-col">
+        <h3>Libro de reclamaciones</h3>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://ieskimbiri.edu.pe/wp-content/uploads/2024/07/i1.jpg" alt="Libro de Reclamaciones" class="libroR">
+        </a>
+    </div>
+
+</footer>
+
+<!-- Texto de derechos reservados separado y centrado -->
+<div class="copyright">
+    © 2024 Librería Mucha Lectura. Todos los derechos reservados.
+</div>
+<script src="script.js"></script> <!-- Vinculamos el archivo JS -->
+</body>
+</html>

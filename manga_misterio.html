@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucha Lectura - Mangas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado con logo y navegación -->
+    <header>
+        <div class="brand">
+            <img src="Mucha Lectura 2.2.png" alt="Logo de la tienda">
+            <h1>Mucha Lectura</h1>
+        </div>
+        <!-- Navegación -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mangas.html">Mangas</a>
+            <a href="solicitar.html">Solicitud de Pedidos</a>
+            <a href="ubicacion.html">Ubicación</a>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página de Mangas -->
+    <section class="productos" id="mangas">
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar título...">
+            <button>Buscar</button>
+        </div>
+
+        <div class="content-grid">
+            <!-- Lista de productos -->
+            <div class="product-section">
+                <h2>Libros más pedidos</h2>
+                <div class="product-grid">
+                    <!-- Primer producto -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71goH8p2ENL._AC_UF1000,1000_QL80_.jpg" alt="Solo Leveling 3">
+                        <h3>Solo Leveling 3</h3>
+                        <h4>Chugong & Dubu</h4>
+                        <button class="view-details" data-product="Solo Leveling 3" data-price="90" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Solo Leveling 3" data-price="90">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Segundo producto -->
+                    <div class="product-card">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_873986-MLU69717380092_052023-O.webp" alt="Gachiakuta">
+                        <h3>Gachiakuta 1</h3>
+                        <h4>Kei Urana</h4>
+                        <button class="view-details" data-product="Gachiakuta 1" data-price="35" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Gachiakuta 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Cuarto producto -->
+                    <div class="product-card">
+                        <img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/92/Kimetsu_no_Yaiba_V1jap.png/revision/latest?cb=20190925044832&path-prefix=es" alt="Kimetsu no yaiba">
+                        <h3>Kimetsu no yaiba 1</h3>
+                        <h4>Koyoharu Gotouge</h4>
+                        <button class="view-details" data-product="Kimetsu no yaiba 1" data-price="25" data-editorial="JUMP COMICS" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Kimetsu no yaiba 1" data-price="25">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Quinto producto -->
+                    <div class="product-card">
+                        <img src="https://static.wikia.nocookie.net/onepiece/images/3/3a/Volumen_1.png/revision/latest?cb=20211112115214&path-prefix=es" alt="One Piece 1">
+                        <h3>One Piece 1</h3>
+                        <h4>Eiichiro Oda</h4>
+                        <button class="view-details" data-product="One Piece 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="One Piece 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Sexto producto -->
+                    <div class="product-card">
+                    <img src="https://www.crisol.com.pe/media/catalog/product/cache/f6d2c62455a42b0d712f6c919e880845/9/7/9788417699673_ac1jfn4ofs8iwm9h.jpg" alt="Blue lock">
+                        <h3>Death Note 1</h3>
+                        <h4>Tsugumi Ohba</h4>
+                        <button class="view-details" data-product="Death Note 1" data-price="39" data-editorial="Planeta Comic">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Death Note 1" data-price="39">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Septimo producto -->
+                    <div class="product-card">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/ca/1e/ca1ef63215b97700f28d026571ff6667.jpg" alt="Dandadan">
+                        <h3>Dandadan 1</h3>
+                        <h4>Yukinobu Tatsu</h4>
+                        <button class="view-details" data-product="Dandadan 1" data-price="35" data-editorial="IVREA" >Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Dandadan 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Octavo producto -->
+                    <div class="product-card">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/f9/69/f9697efa79ad7787ed076650bc43c30f.jpg" alt="Antagonista">
+                        <h3>Antagonista 1</h3>
+                        <h4>Luis Sergio Novoa & Alejandro García Mangana</h4>
+                        <button class="view-details" data-product="Antagonista 1" data-price="30" data-editorial="HANAMI">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Antagonista 1" data-price="30">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Noveno producto -->
+                    <div class="product-card">
+                    <img src="https://static.wikia.nocookie.net/bokunoheroacademia/images/a/ab/Volumen_1_Vigilantes.png/revision/latest?cb=20210104051630&path-prefix=es" alt="igilantes: My Hero Academia Illegals">
+                        <h3>Vigilantes: My Hero Academia Illegals</h3>
+                        <h4>Hideyuki Furuhashi & Betten Court</h4>
+                        <button class="view-details" data-product="Vigilantes: My Hero Academia Illegals 1" data-price="35" data-editorial="JUMP COMICS">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Vigilantes: My Hero Academia Illegals 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Decimo producto -->
+                    <div class="product-card">
+                    <img src="https://www.normaeditorial.com/upload/media/albumes/0001/18/1bcc0df8737c15b780804e3837e2b6809844409c.jpeg" alt="tengoku daimakyou 1">
+                        <h3>tengoku daimakyou 1</h3>
+                        <h4>Masakazu Ishiguro</h4>
+                        <button class="view-details" data-product="tengoku daimakyou 1" data-price="40" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="tengoku daimakyou 1" data-price="40">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                    <!-- Tercer producto -->
+                    <div class="product-card">
+                    <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/a1/54/a154db205c2f493e91d2709e0e2df45d.jpg" alt="Mieruko-chan">
+                        <h3>Mieruko-chan 1</h3>
+                        <h4>Tomoki Izumi</h4>
+                        <button class="view-details" data-product="Mieruko-chan 1" data-price="35" data-editorial="IVREA">Ver detalles</button> <!-- Botón para ver detalles -->
+                        <button class="add-to-cart" data-product="Mieruko-chan 1" data-price="35">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- Lista de géneros literarios -->
+            <div class="genres-list">
+                <h3>Géneros Literarios</h3>
+                <ul>
+                    <li><a href="manga_aventura.html">Aventura</a></li>
+                    <li><a href="manga_ciencia_ficcion.html">Ciencia Ficción</a></li>
+                    <li><a href="manga_fantasia.html">Fantasía</a></li>
+                    <li><a href="manga_misterio.html">Misterio</a></li>
+                    <li><a href="manga_romance.html">Romance</a></li>
+                    <li><a href="manga_terror.html">Terror</a></li>
+                    <li><a href="manga_drama.html">Drama</a></li>
+                    <li><a href="manga_accion.html">Acción</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compras, visible en la esquina -->
+    <div class="cart" id="cart">
+        <h2>Tu Carrito</h2> <!-- Título del carrito -->
+        <ul id="cart-items"> <!-- Lista de productos añadidos al carrito -->
+            <!-- Los productos añadidos aparecerán aquí -->
+        </ul>
+        <button id="checkout">Confirmar Compra</button> <!-- Botón para confirmar la compra -->
+    </div>
+
+    <!-- Modal de detalles del producto -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Detalles del Producto</h2> <!-- Título del modal -->
+            <div id="modal-content-details">
+                <!-- Los detalles del producto aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación de compra -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close" id="closeCheckoutModal">&times;</span> <!-- Botón de cierre -->
+            <h2>Confirmar Compra</h2> <!-- Título del modal -->
+            <p>Estás por confirmar tu compra. ¿Deseas continuar?</p> <!-- Mensaje de confirmación -->
+            <button id="confirmPurchase">Confirmar</button> <!-- Botón para confirmar -->
+            <button id="cancelPurchase">Cancelar</button> <!-- Botón para cancelar -->
+        </div>
+    </div>
+            <!-- Botón para mostrar/ocultar el carrito -->
+<div class="cart-toggle" id="cartToggle">
+    &gt; <!-- Ícono o texto para el borde lateral -->
+</div>
+
+    <!-- Pie de página -->
+<footer>
+    <!-- Columna 1: Mucha Lectura -->
+    <div class="footer-col">
+        <h3>Mucha Lectura</h3>
+        <a href="https://www.facebook.com/login/?locale=es_LA" target="_blank">
+            <img src="https://cdn.icon-icons.com/icons2/3398/PNG/512/circle_facebook_logo_icon_214753.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fhaoyii%2F&source=private_profile&locale=es_ES" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/042/127/156/non_2x/black-and-white-instagram-logo-on-square-with-transparent-background-free-png.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/login?lang=es" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/256/60/60580.png" alt="X">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2022/11/12/02/10/youtube-7586089_1280.png" alt="youtube">
+        </a>
+    </div>
+
+    <!-- Columna 2: Contacto -->
+    <div class="footer-col">
+        <h3>Contacto</h3>
+        <p>MuchaLectura@gmail.com</p>
+        <p>+51 999 999 999</p>
+        <p>Lun - Sab de 8am a 8pm</p>
+    </div>
+
+    <!-- Columna 3: Libro de reclamaciones -->
+    <div class="footer-col">
+        <h3>Libro de reclamaciones</h3>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://ieskimbiri.edu.pe/wp-content/uploads/2024/07/i1.jpg" alt="Libro de Reclamaciones" class="libroR">
+        </a>
+    </div>
+</footer>
+<!-- Texto de derechos reservados separado y centrado -->
+<div class="copyright">
+    © 2024 Librería Mucha Lectura. Todos los derechos reservados.
+</div>
+<script src="script.js"></script> <!-- Vinculamos el archivo JS -->
+</body>
+</html>
