@@ -473,11 +473,101 @@ footer {
     margin: 0; /* Elimina cualquier margen adicional */
 }
 
-/* Responsive */
+/* Grid general: cambiar de dos columnas a una en pantallas pequeñas */
 @media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+    }
+
+    .product-card img {
+        height: auto; /* Ajustar imagen para evitar recortes */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Una tarjeta por fila */
+    }
+
+    .genres-list,
+    .Solicitud,
+    .location {
+        padding: 20px; /* Reducir espacio interior */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia el diseño a una sola columna */
+        align-items: flex-start; /* Alinea todo a la izquierda */
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column; /* Navegación vertical */
+        gap: 10px; /* Espaciado entre enlaces */
+    }
+
+    header img {
+        width: 100px; /* Logo más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px; /* Reduce los márgenes y relleno */
+    }
+
+    nav a {
+        font-size: 0.9em; /* Texto más pequeño */
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center; /* Centrar contenido */
+    }
+
     .footer-col {
-        flex: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+        text-align: center; /* Texto centrado */
+    }
+
+    .footer-col img {
+        width: 30px; /* Íconos más pequeños */
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 10px; /* Menos espacio en pantallas muy pequeñas */
+    }
+
+    .footer-col p {
+        font-size: 0.8em; /* Texto más pequeño */
+    }
+}
+
+
+@media (max-width: 768px) {
+    #cart {
+        width: 90%; /* Ocupa el 90% del ancho */
+        left: 5%; /* Centrado horizontalmente */
+        height: 50vh; /* Ocupa la mitad de la pantalla verticalmente */
+        bottom: 10px; /* Posicionado cerca del borde inferior */
+    }
+}
+
+@media (max-width: 480px) {
+    #cart {
+        width: 100%; /* Ancho completo */
+        left: 0; /* Alineado a la izquierda */
+        height: 60vh; /* Ajustar altura */
+        padding: 5px; /* Menor espacio interno */
     }
 }
