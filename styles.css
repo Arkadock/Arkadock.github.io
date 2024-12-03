@@ -472,7 +472,6 @@ footer {
     box-sizing: border-box;
     margin: 0; /* Elimina cualquier margen adicional */
 }
-
 /* Grid general: cambiar de dos columnas a una en pantallas pequeñas */
 @media (max-width: 768px) {
     .content-grid {
